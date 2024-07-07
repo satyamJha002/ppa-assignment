@@ -75,7 +75,7 @@ const Customers = () => {
 
           <div className="flex gap-6 mt-10">
             {logos.map((logo) => (
-              <div>
+              <div key={logo.id}>
                 <Image src={logo.src} width={40} height={24} alt="logos" />
               </div>
             ))}
